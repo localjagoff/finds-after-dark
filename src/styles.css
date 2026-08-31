@@ -279,7 +279,7 @@ h1 {
 
   .hero-media img {
     object-position: center 72%;
-    filter: saturate(0.9) contrast(1.04) brightness(0.76);
+    filter: saturate(0.98) contrast(1.03) brightness(0.98);
   }
 
   .hero-overlay {
@@ -287,17 +287,18 @@ h1 {
     background:
       linear-gradient(
         180deg,
-        rgba(3, 6, 13, 0.98) 0%,
-        rgba(3, 6, 13, 0.97) 26%,
-        rgba(3, 6, 13, 0.9) 48%,
-        rgba(3, 6, 13, 0.72) 68%,
-        rgba(3, 6, 13, 0.54) 100%
+        rgba(3, 6, 13, 0.88) 0%,
+        rgba(3, 6, 13, 0.82) 22%,
+        rgba(3, 6, 13, 0.7) 42%,
+        rgba(3, 6, 13, 0.46) 62%,
+        rgba(3, 6, 13, 0.18) 82%,
+        rgba(3, 6, 13, 0.1) 100%
       ),
       linear-gradient(
         90deg,
-        rgba(3, 6, 13, 0.88) 0%,
-        rgba(3, 6, 13, 0.62) 70%,
-        rgba(3, 6, 13, 0.5) 100%
+        rgba(3, 6, 13, 0.68) 0%,
+        rgba(3, 6, 13, 0.42) 62%,
+        rgba(3, 6, 13, 0.18) 100%
       );
   }
 
@@ -356,20 +357,26 @@ h1 {
   }
 
   .hero-media img {
-    object-position: center 78%;
+    object-position: center 76%;
   }
 
   .hero-overlay {
     background:
       linear-gradient(
         180deg,
-        rgba(3, 6, 13, 0.99) 0%,
-        rgba(3, 6, 13, 0.98) 32%,
-        rgba(3, 6, 13, 0.91) 53%,
-        rgba(3, 6, 13, 0.7) 75%,
-        rgba(3, 6, 13, 0.52) 100%
+        rgba(3, 6, 13, 0.9) 0%,
+        rgba(3, 6, 13, 0.84) 28%,
+        rgba(3, 6, 13, 0.7) 48%,
+        rgba(3, 6, 13, 0.44) 64%,
+        rgba(3, 6, 13, 0.16) 82%,
+        rgba(3, 6, 13, 0.08) 100%
       ),
-      linear-gradient(90deg, rgba(3, 6, 13, 0.82), rgba(3, 6, 13, 0.54));
+      linear-gradient(
+        90deg,
+        rgba(3, 6, 13, 0.62) 0%,
+        rgba(3, 6, 13, 0.38) 65%,
+        rgba(3, 6, 13, 0.14) 100%
+      );
   }
 
   h1 {
@@ -380,14 +387,14 @@ h1 {
     margin-top: clamp(20px, 5vw, 26px);
     max-width: 15ch;
     font-size: clamp(1.36rem, 6.3vw, 1.78rem);
-    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.48);
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
   }
 
   .intro {
     margin-top: 24px;
     font-size: 1rem;
     line-height: 1.62;
-    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.7);
   }
 
   .action-row {
