@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Finds After Dark">
+  <rect width="64" height="64" fill="#050914"/>
+  <rect x="9" y="9" width="46" height="46" fill="none" stroke="#d6a95d" stroke-width="2"/>
+  <path d="M20 42V20h18v5H26v5h10v5H26v7h-6Z" fill="#f8eedc"/>
+  <circle cx="44" cy="20" r="3" fill="#d6a95d"/>
+</svg>
