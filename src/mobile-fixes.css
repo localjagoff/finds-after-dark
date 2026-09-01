@@ -30,26 +30,26 @@
   }
 
   .floating-card-one {
-    left: 8px;
-    top: 18%;
+    left: 20px;
+    top: 19%;
     transform: rotate(-4deg) translateZ(160px);
   }
 
   .floating-card-two {
-    right: 8px;
+    right: 18px;
     top: 31%;
     transform: rotate(4deg) translateZ(130px);
   }
 
   .floating-card-three {
-    right: 10px;
-    bottom: 9%;
+    right: 20px;
+    bottom: 11%;
     transform: rotate(-3deg) translateZ(145px);
   }
 
   .scene-caption {
     width: calc(100% - 28px);
-    bottom: 1px;
+    bottom: 7px;
     justify-content: center;
     gap: 8px;
     white-space: nowrap;
@@ -77,11 +77,14 @@
   }
 
   .floating-card-one {
-    left: 4px;
+    left: 16px;
   }
 
-  .floating-card-two,
+  .floating-card-two {
+    right: 14px;
+  }
+
   .floating-card-three {
-    right: 4px;
+    right: 16px;
   }
 }
