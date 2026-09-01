@@ -1,4 +1,5 @@
 import "./styles.css";
+import "./mobile-fixes.css";
 
 document.documentElement.classList.add("js");
 
