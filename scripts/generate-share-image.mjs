@@ -4,9 +4,19 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
-const sources = Array.from({ length: 7 }, (_, index) =>
-  path.join(root, `assets/share/preview-${String(index + 1).padStart(2, "0")}.b64`),
-);
+const names = [
+  "preview-01.b64",
+  "preview-02.b64",
+  "preview-03.b64",
+  "preview-04.b64",
+  "preview-05.b64",
+  "preview-06a.b64",
+  "preview-06b.b64",
+  "preview-06c.b64",
+  "preview-06d.b64",
+  "preview-07.b64",
+];
+const sources = names.map((name) => path.join(root, "assets/share", name));
 const outputDir = path.join(root, "public");
 const output = path.join(outputDir, "finds-after-dark-share.jpg");
 
