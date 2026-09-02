@@ -6,6 +6,11 @@ document.documentElement.classList.add("js");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const finePointer = window.matchMedia("(pointer: fine)").matches;
 
+const tiktokEyebrow = document.querySelector(".tiktok-cta .eyebrow");
+if (tiktokEyebrow) {
+  tiktokEyebrow.innerHTML = "<span></span> Finds After Dark";
+}
+
 function createStars() {
   const field = document.querySelector("[data-stars]");
   if (!field) return;
