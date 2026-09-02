@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, "..");
 const sourceDir = path.join(root, "assets", "share");
 const outputDir = path.join(root, "public");
 const output = path.join(outputDir, "finds-after-dark-share.jpg");
+const indexPath = path.join(root, "index.html");
 const chunks = [
   "apple-og-01.b64",
   "apple-og-02a.b64",
@@ -39,4 +40,13 @@ if (image[0] !== 0xff || image[1] !== 0xd8 || image.at(-2) !== 0xff || image.at(
 
 fs.mkdirSync(outputDir, { recursive: true });
 fs.writeFileSync(output, image);
+
+const index = fs.readFileSync(indexPath, "utf8");
+const cacheBustedIndex = index.replaceAll("finds-after-dark-share.jpg?v=20260901c", "finds-after-dark-share.jpg?v=20260902a");
+if (cacheBustedIndex === index) {
+  throw new Error("Expected social preview metadata URL was not found in index.html");
+}
+fs.writeFileSync(indexPath, cacheBustedIndex);
+
 console.log(`Generated public/finds-after-dark-share.jpg (1200x630, ${image.length} bytes, SHA-256 verified)`);
+console.log("Updated deployed social preview URL to v=20260902a");
